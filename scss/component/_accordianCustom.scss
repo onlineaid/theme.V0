@@ -1,0 +1,60 @@
+
+button.accordion-button:focus {
+    border-color: none !important;
+    // border: 1px solid transparent;
+    border-width: none;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(180, 168, 0, 0);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--pkcolor1);
+    background-color: #002f71;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    font-weight: 700;
+    border-radius: 30px;
+}
+.accordion-item{
+    background-color: var(--dark-opacity);
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.accordion-item:first-of-type {
+    border-radius: 30px;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-radius: 30px;
+}
+
+.accordion-item:last-of-type {
+    border-radius: 30px;
+}
+// .accordion-item:last-of-type .accordion-button {
+//     border-radius: 30px;
+// }
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+   border-radius: 30px;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    color: #ff8021;
+    text-align: left;
+    background-color: var(--dark-opacity);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out,
+    border-radius .15s ease;
+    border-radius: 30px;
+}

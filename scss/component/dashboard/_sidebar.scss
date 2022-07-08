@@ -1,0 +1,354 @@
+#chartdiv {
+    width: 100%;
+    height: 300px;
+  }
+  .live-profile{
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        background-color: #6aff0000;;
+        animation: pluse 1500ms infinite;
+        padding: 10px;
+        position: absolute;
+        left: 22px;
+    }
+    @keyframes pluse {
+        0%{
+            box-shadow: #00ff1a 0 0 0 0;
+            border-radius: 50%;
+        }
+        75%{
+            box-shadow: #0bb92800 0 0 0 20px;
+            border-radius: 100%;
+
+        }  
+    }
+
+#imgThumbnailPreview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+
+    .IMGthumbnail {
+        max-width: 168px;
+        height: 220px;
+        margin: auto;
+        // background-color: #ececec;
+        // padding: 2px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .imgThumbContainer {
+        width: 180px;
+        height: 240px;
+        padding: 10px;
+        border: solid var(--pkcolor1);
+        border-radius: 10px;
+
+        .imgName {
+            text-align: center;
+            padding: 2px 6px;
+        }
+    }
+
+}
+
+// tag generator 
+.tags-input-wrapper{
+    background: transparent;
+    // padding: 10px;
+    border-radius: 4px;
+    // max-width: 400px;
+    border: 2px solid var(--dark-opacity);
+    height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    gap: 6px;
+    position: relative;
+    flex-wrap: no-wrap;
+}
+.tags-input-wrapper input {
+    border: none;
+    background: transparent; 
+    /* outline: none; */
+    /* width: 140px; */
+    /* padding: 10px; */
+    height: 50px;
+    margin-bottom: 0;
+    padding: 0;
+    // position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+.tags-input-wrapper .tag{
+    display: inline-flex;
+    background-color: var(--pkcolor1);
+    color: white;
+    border-radius: 40px;
+    padding: 0px 7px 0px 7px;
+    // margin-right: 5px;
+    // margin-bottom:5px;
+    box-shadow: 0 5px 15px -2px rgba(250, 104, 14, 0.7);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+.tags-input-wrapper .tag a {
+    display: inline-flex;
+    cursor: pointer;
+    // padding: 0 7px;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid cornsilk;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.product-upload-wrapper {
+    .upload_form {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .left {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--dark-opacity);
+        border-radius: 10px;
+    }
+    .right {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--dark-opacity);
+        border-radius: 10px;
+    }
+}
+
+
+.dashboard_wrapper {
+    z-index: 111;
+    top: 0;
+
+    .profile_show {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        background-color: var(--dark-opacity);
+        border-radius: 8px;
+        padding: 16px;
+        position: relative;
+
+        img {
+            border-radius: 50px;
+        }
+    }
+
+    .dashboard_options {
+        background-color: var(--dark-opacity);
+        border-radius: 20px;
+        padding: 16px 0px;
+
+        ul {
+            margin: 0;
+            padding: 10px;
+
+            li {
+                list-style: none;
+                margin: 0;
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    color: var(--dark-text);
+                    padding: 6px 15px;
+                    transition: all 0.5s;
+                    border-radius: 5px;
+                }
+
+                &:hover a {
+                    background-color: var(--dark-opacity);
+                    border-radius: 5px;
+                    color: var(--pkcolor1);
+                }
+            }
+        }
+    }
+
+}
+
+.overview_info {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    img {
+        width: 60px;
+    }
+
+    .cart_info {
+        display: flex;
+        align-items: center;
+        border-left: 2px solid var(--pkcolor1);
+        border-right: 2px solid var(--pkcolor1);
+        background: var(--dark-opacity);
+        border-radius: 10px;
+        padding: 15px 10px;
+        width: 23%;
+        gap: 15px;
+
+        .cart_text {
+            padding: 10px;
+
+            h3,
+            p {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+}
+
+.tranding_product {
+    // margin-top: 100px;
+    background-color: var(--dark-opacity);
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+
+    .table {
+
+        td,
+        tr,
+        th {
+            border: 1px solid gold;
+            color: var(--dark-text);
+            // white-space: pre;
+
+        }
+
+        padding: 10px;
+
+        img {
+            width: 80px;
+            border-radius: 10px;
+            height: 80px;
+            object-fit: cover;
+            display: flex;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 992px) {
+    .overview_info {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        .cart_info {
+            width: 48%;
+            gap: 15px;
+
+            .cart_text {
+                padding: 10px;
+
+                h3,
+                p {
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+
+    .product-upload-wrapper {
+        .upload_form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .left {
+            width: 100%;
+        }
+        .right {
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+
+
+@media (max-width:576px) {
+
+    .overview_info {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+
+        .cart_info {
+            width: 100%;
+            gap: 15px;
+
+            .cart_text {
+                padding: 10px;
+
+                h3,
+                p {
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+
+    .tranding_product {
+        width: 100%;
+    }
+
+    .vendors_profiles {
+        .profils_details_vendor {
+            width: 300px;
+
+            .profile_right {
+                width: 150px;
+            }
+        }
+    }
+
+    .product-upload-wrapper {
+        .upload_form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .left {
+            width: 100%;
+        }
+        .right {
+            width: 100%;
+        }
+    }
+
+
+
+
+}

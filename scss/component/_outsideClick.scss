@@ -1,0 +1,53 @@
+// Outsite clike
+.outside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+
+  .hamburger_btn {
+    
+    color: rgb(111, 109, 109);
+    background-color: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: var(--dark-text);
+    padding: 5px 25px;
+
+    &:hover {
+      background: var(--dark-hover);
+      border-radius: 5px;
+      
+    }
+  }
+  .left_swipe {
+    width: 440px;
+    display: none;
+    position: fixed;
+    top: -10px;
+    // border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    left: 0;
+    height: 100vh;
+    overflow: hidden scroll;
+    backdrop-filter: blur(50px);
+    z-index: 11111;
+  }
+
+  .open_swipe {
+    display: flex;
+  }
+}
+
+@media (max-width: 578px) {
+  .outside{
+    .left_swipe {
+      right: 0;
+      width: 320px;
+    }
+
+  }
+}

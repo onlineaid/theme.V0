@@ -1,0 +1,96 @@
+.popup {
+
+    background-color: rgba(0, 0, 0, 0.839);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 11111;
+    display: none;
+
+    .popup-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 111;
+        position: fixed;
+        border-radius: 20px;
+        transition: 0.5s;
+        background: var(--white, #fff);
+        padding: 30px;
+
+
+
+
+        .popup-body {
+            position: relative;
+
+            .give-mail {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 94%;
+                transform: translate(-50%, -50%);
+                background: rgb(255 255 255 / 44%);
+                box-shadow: var(--shadow-box);
+            }
+
+            img {
+                border-radius: 20px;
+            }
+        }
+    }
+
+}
+
+.popup-close {    
+    border: 2px solid var(--pkcolor1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s;
+    background: red;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: var(--shadow-box);
+    color: var(--white, #fff);
+
+    &:hover{
+        color: var(--black, #000);
+    }
+}
+.modal-dialog-scrollable .modal-content {
+    max-height: 100%;
+    overflow: hidden;
+    // background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(50px);
+    border: none;
+    border-radius: 20px;
+    box-shadow: var(--dark-shadow-2);
+}
+
+@media(max-width: 557px) {
+    .popup {
+        .popup-content {
+            padding: 15px;
+
+            .popup-body {
+                .give-mail {
+                    top: 50%;
+                    left: 50%;
+                    width: 90%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(255 255 255 / 44%);
+                }
+
+                img {
+                    border-radius: 20px;
+                    width: 300px
+                }
+            }
+        }
+    }
+}

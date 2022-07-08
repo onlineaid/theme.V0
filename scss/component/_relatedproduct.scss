@@ -1,0 +1,46 @@
+.related-product {
+    img {
+        border-radius: 20px;
+        height: 350px;
+        object-fit: cover;
+
+    }
+    .product-box{
+        height: 100%;
+    }
+    
+    .love {
+        position: absolute;
+        top: 16px;
+        right: 17px;
+
+        i{
+            color: rgb(255, 0, 0);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .related-product {
+        img {
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 557px) {
+    .related-product {
+        img {
+            height: auto;
+            object-fit: cover;
+        }
+        .product-box{
+            height: 100%;
+        }
+    }
+}

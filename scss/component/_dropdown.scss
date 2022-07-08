@@ -1,0 +1,194 @@
+.advance-dropdown {
+  .user-profile {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 5px;
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .dropdown_parent_one {
+    width: 400px;
+    border-radius: 8px;
+    line-height: 55px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-text);
+    padding: 0 12px;
+
+    &:hover  {
+      background: var(--dark-hover);
+      color: var(--dark-text);
+    }
+
+    span {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .wrapper {
+    top: 65px;
+    display: flex;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: none;
+    transition: all 0.3s ease;
+    ul {
+      margin-bottom: 0;
+      padding: 0;
+      transition: all 0.3s ease;
+      height: auto;
+      margin-top: 10px;
+  
+      li {
+        list-style: none;
+        line-height: 55px;
+        width: 400px;
+  
+        &:hover a {
+          background: var(--dark-hover);
+          color: var(--dark-text);
+        }
+  
+        .link-control {
+          position: relative;
+          color: #b0b3b8;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 0 10px;
+          border-radius: 8px;
+          align-items: center;
+          text-decoration: none;
+  
+          &:hover {
+            // background: #3A3B3C;
+            background: var(--dark-hover);
+            color: var(--dark-text);
+          }
+        }
+  
+        .link-control,
+        a {
+          position: relative;
+          color: var(--dark-text);
+          font-size: 18px;
+          font-weight: 500;
+          padding: 0 10px;
+          display: flex;
+          border-radius: 8px;
+          align-items: center;
+          text-decoration: none;
+  
+          i {
+            font-size: 25px;
+            pointer-events: none;
+            margin-left: auto;
+          }
+  
+          .icon {
+            height: 40px;
+            width: 40px;
+            margin-right: 13px;
+            background: var(--dark-opacity);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-radius: 50%;
+  
+            span {
+              line-height: 40px;
+              font-size: 20px;
+              color: var(--dark-text);
+            }
+          }
+        }
+      }
+
+      .arrow {
+        padding-left: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--dark-text);
+        cursor: pointer;
+
+        span {
+          margin-right: 15px;
+        }
+      }
+    }
+    ul.drop_btn_one, ul.drop_btn_two, ul.drop_btn_three, ul.drop_btn_four,
+    ul.drop_btn_one_b1, ul.drop_btn_two_b2, ul.drop_btn_three_b3, ul.drop_btn_four_b4,
+    ul.drop_btn_one_c1, ul.drop_btn_two_c2, ul.drop_btn_three_c3, ul.drop_btn_four_c4,
+    ul.drop_btn_one_d1, ul.drop_btn_two_d2, ul.drop_btn_three_d3, ul.drop_btn_four_d4,
+    ul.drop_btn_one_e1, ul.drop_btn_two_e2, ul.drop_btn_three_e3, ul.drop_btn_four_e4 {
+      display: none;
+    }
+  }
+
+  .wrapper.show, 
+  .wrapper_two.show, 
+  .wrapper_three.show, 
+  .wrapper_four.show, 
+  .wrapper_five.show {
+    display: block;
+    display: flex;
+    transition: all 0.3s ease;
+  }
+  .wrapper_two, 
+  .wrapper_three, 
+  .wrapper_four, 
+  .wrapper_five {
+    @extend .wrapper;
+  }
+
+  .dropdown_parent_two, 
+  .dropdown_parent_three, 
+  .dropdown_parent_four, 
+  .dropdown_parent_five {
+    @extend .dropdown_parent_one;
+  }
+
+  
+}
+
+@media (max-width: 578px) {
+  .advance-dropdown {
+    .wrapper {
+      width: 300px;
+      ul li {
+        width: 300px;
+      }
+      ul.menu-bar li {
+        width: 300px;
+      }
+    }
+    .dropdown_parent_one {
+      width: 300px;
+    }    
+    .wrapper_two, 
+    .wrapper_three, 
+    .wrapper_four, 
+    .wrapper_five  {
+      @extend .wrapper;
+    }
+
+    .dropdown_parent_two, 
+    .dropdown_parent_three, 
+    .dropdown_parent_four, 
+    .dropdown_parent_five {
+      @extend .dropdown_parent_one
+    }
+  }
+}

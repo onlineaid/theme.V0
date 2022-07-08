@@ -1,0 +1,78 @@
+/* Search Header */
+
+.main-search {
+    background: var(--dark-opacity);
+    border-radius: 5px;
+    padding-left: 10px;
+
+    input:focus {
+      outline: none;
+    }
+
+    select:focus {
+      outline: none;
+    }
+
+    form {
+      height: 40px;
+    }
+
+    select {
+      font-size: 12px;
+      font-weight: bold;
+      padding: 10px 2px;
+      color: var(--dark-text);
+
+      option {
+        font-size: 16px;
+        color: var(--text-dark);
+        background-color: var(--dark-bg);
+      }
+    }
+
+    select {
+      // padding: 15px 5px 15px 15px;
+      border: none;
+      // font-family: Verdana;
+      // font-weight: bold;
+      // background-color: DodgerBlue;
+      // // color: white;
+      // outline: none;
+      // // min-width: 150px;
+      // cursor: pointer;
+    
+      // /*Remove decorations to replace arrow with custom arrow */   
+      // appearance: none;
+      // -moz-appearance: none;
+      // -webkit-appearance: none;  
+      // &::-ms-expand { display: none };  
+    }
+    
+    .custom-select:after {
+      /* Here we add font taken from libre office to content */
+      content: "▼";
+      position: absolute;
+      top: 4;
+      /* Here we need to calculate fonts place so that if select box width changes the custom button font will be always at same place */
+      left: calc(100% - 30px);
+      font-size: 80%;
+      padding: 12px 7px;
+      background-color: DodgerBlue;
+      color: rgb(0, 0, 0);
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 90%;
+      border: none;
+      background: transparent;
+      padding: 5px;
+      height: 35px;
+      font-weight: 500;
+      color: var(--dark-text);
+    }
+
+    i {
+      color: var(--dark-text);
+    }
+  }

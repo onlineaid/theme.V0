@@ -1,0 +1,20 @@
+{
+  "name": "header",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "Online Aid",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.8.3",
+    "js-image-zoom": "^0.7.0",
+    "lite-server": "^2.6.1"
+  }
+}

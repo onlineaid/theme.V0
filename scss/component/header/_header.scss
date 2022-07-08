@@ -1,0 +1,126 @@
+.header_one {
+  box-shadow: var(--dark-shadow);
+
+  .options {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+    .dp-show {
+      display: none;
+    }
+
+    .numOfNotify {
+      background: var(--red);
+      border-radius: 50px;
+      color: var(--white);
+      left: 1px;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 3px;
+      height: 20px;
+      min-width: 20px;
+      line-height: 20px;
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 10px;
+      left: 50px;
+    }
+
+    i {
+      font-size: 22px;
+      color: var(--dark-text);
+      padding: 10px 25px;
+      margin: 10px;
+
+      &:hover {
+        background: rgba(214, 213, 213, 0.331);
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media(max-width:992px) {
+  .header_one {
+    .options {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+      background: var(--dark-bg);
+      backdrop-filter: blur(30px);
+      border-top: 1px solid rgba(204, 204, 204, 0.473);
+      z-index: 1111;
+
+      .dp-show {
+        display: block;
+      }
+
+      .numOfNotify {
+        top: 14px;
+        left: 25px;
+      }
+
+      i {
+        margin: 10px 0px 0px 0px;
+        padding: 14px 12px;
+      }
+    }
+
+    .logo-center a {
+      align-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
+  }
+
+}
+
+// @media (max-width: 1200px) {
+//   .header_one {
+//     .options {
+//       position: fixed;
+//       bottom: 0;
+//       width: 100%;
+//       left: 0;
+//       background: var(--dark-bg);
+//       backdrop-filter: blur(30px);
+//       border-top: 1px solid rgba(204, 204, 204, 0.473);
+//       z-index: 1111;
+
+//       .dp-show {
+//         display: block;
+//       }
+
+//       .numOfNotify {
+//         top: 14px;
+//         left: 25px;
+//       }
+
+//       i {
+//         margin: 10px 0px 0px 0px;
+//         padding: 14px 12px;
+//       }
+//     }
+
+//     .logo-center a {
+//       align-items: center;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       margin-bottom: 5px;
+//       text-decoration: none;
+//     }
+//   }
+// }

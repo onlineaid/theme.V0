@@ -1,0 +1,85 @@
+@forward 'globals';
+
+
+
+
+// Roboto Slap 
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+// Oswald 
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet');
+
+// Oppen sans 
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+// Rubik 
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&family=Satisfy&display=swap');
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    margin-bottom: 80px;
+    // font-family: 'Roboto Slab', serif;
+    // font-family: 'Oswald', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+
+.card{
+    background: none;
+}
+
+.bg-opacity-25 {
+    opacity: 0.5;
+    cursor:help !important
+}
+
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: coral;
+    font-weight: lighter;
+}
+
+.group {
+    position: absolute;
+    top: -136px;
+    right: 34px;
+    display: flex;
+}
+th {
+    white-space: pre;
+}
+
+.icon-btn i {
+    padding: 10px;
+    background-color: var(--dark-opacity);
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--dark-text);
+    margin: 4px;
+}
+
+.table td, tr, th {
+    color: var(--dark-text);
+    border: 2px solid var(--pkcolor1);
+    // white-space: pre;
+}
+
+.list-none{
+    list-style: none;
+}
+
+
+
+
+

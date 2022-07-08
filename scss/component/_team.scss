@@ -1,0 +1,65 @@
+// .team { }
+.profile {
+    
+    .profile_img {
+        position: relative;
+        transition: 0.5s; 
+        img {
+            border-radius: 20px;
+            box-shadow: var(--shadow-box);
+        }  
+        &:hover img {
+            // filter: brightness(1) contrast(1) saturate(1.86) ;
+            filter: brightness(0.5) contrast(0.98) saturate(1.86) ;
+        }
+        &:hover:after {
+            position: absolute;
+            content: '';
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.9) 100%);
+            mix-blend-mode: overlay;
+            border-radius: 20px;
+        }
+
+        &:hover .profile-info {
+            display: block;
+            // top: 70%;
+            
+        }
+
+        .profile-info{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            color: #fff;
+            z-index: 111;
+            transition: 0.5s;
+            display: none;
+            width: 100%;
+
+            .profile-details {
+                display: flex;
+                flex-direction: column;
+
+                .social_profile_link a{
+                    color: var(--pkcolor1);
+                    text-decoration: none;
+                    padding: 4px;
+                    cursor: pointer;
+                    &:hover{
+                        text-decoration: underline;
+                        color: white
+                        
+                    }
+                }
+            }
+
+          
+        }
+    }
+}

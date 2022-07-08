@@ -1,0 +1,28 @@
+.reviews {
+    .single-review {
+        display: flex;
+
+        .review-user-img {
+            img {
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+                border-radius: 50%;
+                box-shadow: var(--shadow-box);
+            }
+        }
+
+        .review-content {
+            background: var(--dark-opacity);
+            padding: 10px;
+            border-radius: 10px;
+            span.user-name {
+                background: var(--dark-opacity);
+                font-weight: 500;
+                padding: 2px 8px;
+                border-radius: 50px;
+                color: var(--pkcolor1)
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.category_swipe {
+    background-color: var(--dark-opacity);
+    padding: 10px;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        list-style: none;
+        padding: 7px 8px;
+        margin-top: 15px;
+        border-radius: 7px;
+        transition: all .5s ease-in-out !important;
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+  
+        i {
+          opacity: 0;
+          visibility: hidden;
+          transition: all .5s ease-in-out !important;
+        }
+        
+        &:hover {
+          background: var(--dark-opacity);
+          padding-left: 15px;
+        }
+  
+        &:hover i {
+          display: block;
+          padding-right: 10px;
+          opacity: 0.9;
+          visibility: visible;
+        }
+  
+        a {
+          text-decoration: none;
+          color: var(--dark-text);
+          display: block;
+          cursor: pointer;
+          width: 100%;
+        }
+      }
+    }
+  }

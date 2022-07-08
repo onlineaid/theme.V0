@@ -1,0 +1,13 @@
+{
+    "name": "onlineaid/e-commerce HTML template",
+    "description": "Modern design - 2022 Best Premium Templates",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "online aid",
+            "email": "online.aid@outlook.com"
+        }
+    ],
+    "require": {}
+}
